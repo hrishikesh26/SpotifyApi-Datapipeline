@@ -1,0 +1,14 @@
+cd airflow
+ls
+sudo vi airflow.cfg (in the file change the dags_folder object content to spotify_dag )
+sudo mkdir spotify_dag
+cd spotify_dag
+sudo vi spotify_dag.py (copy paste the code from the spotify_dag.py file in local system and save)
+sudo vi spotify_etl.py (copy paste the code from the spotify_etl.py file in local system and save)
+
+ctrl+c(shutdown your airflow)
+
+airflow standalone (restart)
+now go and check whether the spotify_dag is added to the dags
+
+go to the spotify_dag(run by trigger_DAG)
