@@ -1,0 +1,2 @@
+one bracket contains - 
+[[{artist : {}}, {album : {}}, {track : {}}, {user : {}}] , [{artist : {}}, {album : {}}, {track : {}}, {user : {}}]]
