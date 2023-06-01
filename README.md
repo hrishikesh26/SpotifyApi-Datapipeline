@@ -226,4 +226,4 @@
     
 ➡️ With the help of these csv's you can furhter do data analytics using AWS services such as AWS Quicksight & AWS Athena (quering service). 
 
-
+**Note : Please refer to the ipynb notebook included in the repository to view the schema of data provide by SpotifyAPI**
