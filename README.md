@@ -80,8 +80,8 @@
   
   
 ## Making changes in ec2 instance terminal - 
-- Use `ls` command to view the directories under your home directory. "Airflow" will be displayed
-- Go to Airflow folder, use `cd Airflow`.
+- Use `ls` command to view the directories under your home directory. "airflow" will be displayed
+- Go to Airflow folder, use `cd airflow`.
 - Again use `ls` and navigate to airflow.cfg file. Here you need to make changes into the file, for that use `sudo vi ariflow.cfg` command to open and edit the file. 
   - in the file change the dags_folder object content from "/home/ubuntu/airflow/dags" to "/home/ubuntu/airflow/spotify_dag". <br>
   
