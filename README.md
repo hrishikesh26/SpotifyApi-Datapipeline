@@ -1,6 +1,19 @@
 # SpotifyApi - Data collection pipeline using Apache-Airflow service and AWS services🪁 
 
+### Architecture ↘️
+
+  ![image](https://github.com/hrishikesh26/SpotifyApi-Datapipeline/assets/94166344/f16d5070-25b1-4108-bd9b-507e73b0aa18)  
+  
+  
+  # 💡 What is Apache-Airflow.
+  - Apache Airflow is an open-source platform used for orchestrating and scheduling complex data workflows. It allows users to define, schedule, and monitor workflows as directed acyclic graphs (DAGs). Airflow provides a flexible and scalable framework for managing data pipelines, allowing users to easily define dependencies, execute tasks, and monitor their progress. It supports a wide range of integrations and provides a web-based UI for managing and monitoring workflows. Overall, Apache Airflow simplifies the process of managing and automating data pipelines in a reliable and scalable manner. <br>
+
+  # 💡What is SpotifyAPI
+  - The Spotify API is a set of web-based endpoints and tools provided by Spotify, the popular music streaming platform. It allows developers to access and interact with Spotify's vast catalog of music, user data, playlists, and more programmatically. With the Spotify API, developers can build applications that integrate with Spotify's features, such as searching for music, retrieving artist and album information, creating and modifying playlists, and controlling music playback. It enables developers to leverage Spotify's music data and functionality to enhance their own applications and create unique music-related experiences for users. <br>
+
+
 ## Overview 📔
+
 - This project showcases a comprehensive solution for data collection and sorting from the Spotify API, leveraging the powerful Airflow service hosted on an AWS EC2 T3 Medium instance. By combining the capabilities of the Spotify API, Airflow, and AWS services, this project provides a seamless workflow for gathering and organizing Spotify data.
 
 - Using Airflow, an open-source platform for workflow automation, a series of tasks are set up to periodically retrieve data from the Spotify API. These tasks are orchestrated and scheduled within Airflow, ensuring efficient and reliable data collection.
@@ -10,6 +23,7 @@
 - To facilitate efficient data storage and organization, the project integrates AWS S3 buckets. Python code, written within the Airflow service, is employed to sort and store the collected Spotify data in designated S3 buckets. This approach enables easy access, retrieval, and further analysis of your spotify data.
 
 - By leveraging the Spotify API, Airflow, and AWS services, this project provides a robust and scalable infrastructure for collecting and organizing Spotify data. The modular design and automation capabilities of the workflow allow for easy customization and extension to meet specific requirements, making it a valuable resource for various applications, such as music analytics, recommendation systems, and research projects.
+
 
 
 # Initial setup for hosting airflow service : - 
@@ -207,7 +221,8 @@
     
 - Now if you navigate back to your s3 bucket on AWS account you can see that the desired data is extracted from SpotifyAPI in the form of csv. 
 
-    ![image](https://github.com/hrishikesh26/SpotifyApi-Datapipeline/assets/94166344/2c3b1591-be21-40c9-b795-9f92e98bf800)
+    ![s3 bucket contents after executing](https://github.com/hrishikesh26/SpotifyApi-Datapipeline/assets/94166344/76f963b5-da7c-495e-afd9-927de6c28e52)
+
     
 ➡️ With the help of these csv's you can furhter do data analytics using AWS services such as AWS Quicksight & AWS Athena (quering service). 
 
